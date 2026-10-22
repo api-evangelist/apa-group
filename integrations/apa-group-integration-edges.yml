@@ -1,0 +1,22 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/apa-group/integrations
+- https://n8n.io/integrations/apa-group/
+- https://composio.dev/toolkits/apa-group
+- https://monid.ai/tools/apa-group
+checked:
+- https://zapier.com/apps/apa-group/integrations
+- https://www.make.com/en/integrations/apa-group
+- https://n8n.io/integrations/apa-group
+- https://www.apa.com.au/sitemap.xml
+- https://composio.dev/toolkits/apa-group
+- https://monid.ai/tools/apa-group
+- https://n8n.io/integrations/apa-group/
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: APA Group is an energy infrastructure company with no public API; no marketplace listing, integrations page
+  or contract naming another service was found. Partnerships in its newsroom (e.g. CS Energy) are commercial energy-project
+  partnerships, not software integrations, and are not recorded as edges.

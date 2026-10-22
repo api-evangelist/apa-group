@@ -1,0 +1,16 @@
+generated: '2026-10-21'
+method: none
+status: none
+server:
+  name: APA Group MCP server
+  note: >-
+    No official MCP server (hosted or local) found for APA Group. Pre-flight
+    contract discovery on apa.com.au and admin.apa.com.au recorded mcp: absent,
+    no documented MCP tool table exists, and a web search returned nothing
+    naming APA. No OpenAPI exists in this repo, so no candidate tool list can be
+    derived either.
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched

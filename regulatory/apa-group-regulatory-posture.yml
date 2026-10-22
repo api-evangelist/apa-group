@@ -1,0 +1,85 @@
+generated: '2026-10-21'
+method: searched
+source:
+- https://www.apa.com.au/privacy-statement/
+- https://www.apa.com.au/terms-of-use/
+signals:
+  data_subject_request:
+    url: https://www.apa.com.au/privacy-statement/
+    section: Your rights of access and correction of your personal information
+    rights_named: [access, correction]
+    evidence:
+    - source: https://www.apa.com.au/privacy-statement/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'Under the Privacy Act, you have a right to access and correct your personal information that is collected and held by APA.'
+    - source: https://www.apa.com.au/privacy-statement/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'APA will endeavour to respond to your request to access or correct your personal information within 30 days from your request.'
+    - source: https://www.apa.com.au/privacy-statement/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'If APA refuses your request to access or correct your personal information, APA will provide you with written reasons for the refusal and details of complaint mechanisms.'
+    note: >-
+      Only access and correction are named, under the Australian Privacy Act. Requests go to APA's
+      Privacy Officer and need proof of identity. APA aims to respond within 30 days and may charge a
+      reasonable administration fee for access. Complaints can be escalated to the OAIC. The page does
+      not mention erasure or portability rights.
+  data_residency:
+    url: https://www.apa.com.au/privacy-statement/
+    section: Overseas disclosure
+    evidence:
+    - source: https://www.apa.com.au/privacy-statement/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'APA may disclose personal information to overseas recipients in order to provide its services and for administrative or other business management purposes, including to cloud service providers for data storage purposes.'
+    - source: https://www.apa.com.au/privacy-statement/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'However, before disclosing any personal information to an overseas recipient, APA will take reasonable steps in the circumstances to ensure the overseas recipient complies with the Australian Privacy Principles or is bound by a substantially similar privacy scheme, unless you consent to the overseas disclosure or it is otherwise required or permitted by law.'
+    note: >-
+      APA makes no commitment to keep data in Australia. Personal information, including data held by
+      cloud storage providers, may go overseas. The only safeguard is "reasonable steps" toward APP-equivalent
+      protection. No countries are named.
+  subprocessors:
+    url: https://www.apa.com.au/privacy-statement/
+    evidence:
+    - source: https://www.apa.com.au/privacy-statement/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'third party service providers, contractors and suppliers, including parties to whom APA has outsourced various functions or engaged to perform administrative or other business management functions such as:'
+    - source: https://www.apa.com.au/privacy-statement/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'Our share registry service provider, MUFG Pension & Market Services ( MUFG ), collects, uses and handles personal information of securityholders of APA.'
+    note: >-
+      There is no published subprocessor list. The statement names categories of recipients, such as
+      data and records storage, and surveys, marketing and website services. The only provider named
+      is MUFG, the share registry.
+  data_retention:
+    url: https://www.apa.com.au/privacy-statement/
+    section: Security of your personal information
+    evidence:
+    - source: https://www.apa.com.au/privacy-statement/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'APA will destroy or de-identify personal information in circumstances where it is no longer needed, unless APA is otherwise required or authorised by law to retain the information.'
+    note: >-
+      The retention rule is based on need: data is destroyed or de-identified once it is no longer needed.
+      No retention periods are stated.
+  notice_and_action:
+    url: https://www.apa.com.au/terms-of-use/
+    section: Social Media
+    evidence:
+    - source: https://www.apa.com.au/terms-of-use/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'Please remember that if your contributions do not comply with these rules then you and your content might be removed.'
+    - source: https://www.apa.com.au/terms-of-use/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'While we support discussion, we reserve the right to delete comments at our discretion.'
+    note: >-
+      This covers moderation of APA's own social media channels only. APA can remove content at its
+      discretion. No mechanism for users to report content and no appeal process is described.

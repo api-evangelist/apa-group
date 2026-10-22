@@ -1,23 +1,96 @@
 aid: apa-group
+
 name: APA Group
-description: 'APA Group is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: APA Group is an Australian Securities Exchange (ASX) listed energy infrastructure business that owns and operates a portfolio of more than $20 billion in assets. It delivers around half of Australia's domestic gas through a 15,000-kilometre network of gas pipelines, alongside gas transmission, processing, compression and storage assets, and generates electricity from gas-powered and renewable assets while owning and operating battery storage and electricity transmission infrastructure. APA does not publish a public developer portal or API documentation on apa.com.au; it was surfaced via the australia-apidays-2026 harvest.
+
 url: https://raw.githubusercontent.com/api-evangelist/apa-group/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Energy
+- Energy Infrastructure
+- Gas Pipelines
+- Electricity Transmission
+- Renewable Energy
+- Australia
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://admin.apa.com.au/media/u1scurta/websiteteaserimage.jpg?width=1200&height=630&mode=crop&quality=80&format=jpg
+
 common:
+- type: WellKnown
+  url: well-known/apa-group-well-known.yml
+- type: Hosts
+  url: hosts/apa-group-hosts.yml
+- type: SignUp
+  url: https://www.apa.com.au/suppliers-and-contractors/register-your-interest
+- type: DomainSecurity
+  url: security/apa-group-domain-security.yml
 - type: Website
   url: https://apa.com.au/
+- type: About
+  url: https://www.apa.com.au/about-us/
+- type: Contact
+  url: https://www.apa.com.au/contact-us/
+- type: Newsroom
+  url: https://www.apa.com.au/news
+- type: InvestorRelations
+  url: https://www.apa.com.au/investors-centre/financial-results/
+- type: TermsOfService
+  url: https://www.apa.com.au/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.apa.com.au/privacy-statement/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/apa-group/
+- type: YouTube
+  url: https://www.youtube.com/@insideAPA
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website apa.com.au serves title "APA Group" and a meta description naming the company; no developer portal, API docs or GitHub repos found (github.com/APA-Group is an empty unverified org, not recorded).
+  evidence:
+  - url: https://apa.com.au/
+    status: 200
+  - url: https://www.apa.com.au/contact-us/
+    status: 200
+  - url: https://www.apa.com.au/news
+    status: 200
+  - url: https://www.apa.com.au/terms-of-use/
+    status: 200
+  - url: https://www.apa.com.au/privacy-statement/
+    status: 200
+  - url: https://www.apa.com.au/investors-centre/financial-results/
+    status: 200
+  - url: https://www.linkedin.com/company/apa-group/
+    status: 200
+  - url: https://www.youtube.com/@insideAPA
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

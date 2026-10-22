@@ -1,0 +1,5 @@
+generated: '2026-10-21'
+method: none
+source: https://www.apa.com.au/sitemap.xml
+note: No first-party SDK, CLI or client library found. APA Group publishes no developer portal or API documentation (sitemap.xml on www.apa.com.au lists no API/developer pages); registry checks registry.npmjs.org/apa-group -> 404, pypi.org/pypi/apa-group/json -> 404.
+packages: []

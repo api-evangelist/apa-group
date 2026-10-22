@@ -1,0 +1,79 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 6
+  own: 3
+  other_domain: 1
+  platform: 2
+  roles:
+  - api
+  - identity
+  - other
+  - website
+hosts:
+- host: admin.apa.com.au
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: apa.com.au
+  role: other
+  relation: own
+- host: apa.com.au
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  serves: []
+  registrable_domain: apa.com.au
+  role: website
+  relation: own
+- host: api.com.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.au
+  role: api
+  relation: other-domain
+- host: www.apa.com.au
+  found_by:
+  - pointer
+  types:
+  - SignUp
+  - About
+  - Contact
+  - Newsroom
+  - InvestorRelations
+  - TermsOfService
+  - PrivacyPolicy
+  serves: []
+  registrable_domain: apa.com.au
+  role: identity
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: www.youtube.com
+  found_by:
+  - pointer
+  types:
+  - YouTube
+  serves: []
+  registrable_domain: youtube.com
+  role: other
+  relation: platform
